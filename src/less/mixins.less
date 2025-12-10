@@ -1,0 +1,27 @@
+// Mixin para bordas arredondadas
+.border-radius(@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+// Mixin para transições
+.transition(@property: all, @duration: 0.3s, @timing: ease) {
+  transition: @property @duration @timing;
+  -webkit-transition: @property @duration @timing;
+  -moz-transition: @property @duration @timing;
+}
+
+// Mixin para sombra
+.box-shadow(@x: 0, @y: 2px, @blur: 5px, @color: rgba(0,0,0,0.1)) {
+  box-shadow: @x @y @blur @color;
+  -webkit-box-shadow: @x @y @blur @color;
+  -moz-box-shadow: @x @y @blur @color;
+}
+
+// Mixin para gradiente
+.gradient(@start-color, @end-color) {
+  background: linear-gradient(to bottom, @start-color 0%, @end-color 100%);
+  background: -webkit-linear-gradient(top, @start-color 0%, @end-color 100%);
+  background: -moz-linear-gradient(top, @start-color 0%, @end-color 100%);
+}
